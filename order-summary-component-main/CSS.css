@@ -28,7 +28,7 @@ main > article > .personal-inf h1 {
   font-family: "Red Hat Display", sans-serif;
 }
 main > .imagen > img {
-  width: 455px;
+  width: 456px;
   height: 238px;
   border-radius: 20px 20px 0px 0px;
 }
@@ -116,4 +116,125 @@ main > .btn-2 {
   cursor: pointer;
   padding-bottom: 20px;
   font-family: "Red Hat Display", sans-serif;
+}
+/*CSS mobile*/
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 375px;
+    height: 709px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("Imagen/pattern-background-mobile-order-summary-component-main.svg");
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 325px;
+    height: 559px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  main > article > .personal-inf h1 {
+    font-size: 23px;
+    color: hsl(223, 47%, 23%);
+    font-family: "Red Hat Display", sans-serif;
+  }
+  main > .imagen > img {
+    width: 325px;
+    height: 161px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  article > .personal-inf {
+    display: flex;
+    justify-content: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 143px;
+  }
+  article > .personal-inf > p {
+    font-size: 14px;
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+  }
+  article {
+    display: flex;
+    justify-content: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 453px;
+    height: 420px;
+  }
+  article > .audio-part {
+    width: 281px;
+    height: 75px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 70px 130px 105px;
+    grid-template-rows: auto;
+    background-color: hsl(225, 100%, 98%);
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  article > .audio-part > img {
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+  article > .audio-part > p {
+    justify-self: center;
+    align-self: center;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  article > .audio-part > p > span {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    font-family: "Red Hat Display", sans-serif;
+  }
+  article > .audio-part > a {
+    text-align: end;
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  main > article > .btn-1 {
+    font-family: "Red Hat Display", sans-serif;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    width: 283px;
+    height: 50px;
+    border-radius: 13px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 5px 18px 10px hsl(225, 100%, 94%);
+    cursor: pointer;
+  }
+
+  main > .btn-2 {
+    background-color: transparent;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    font-family: "Red Hat Display", sans-serif;
+  }
 }
